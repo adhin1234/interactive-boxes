@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  overflow: hidden;
+  max-height: 80px;
+}
+
+.box.expanded {
+  max-height: 300px;
+}
+
+.options {
+  margin-top: 15px;
+  display: none;
+}
+
+.box.expanded .options {
+  display: block;
+}
+
+.color-option {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.color-option[data-color="red"] { background: red; }
+color-option[data-color="blue"] { background: blue; }
+.color-option[data-color="green"] { background: green; }
+
+.size-option {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
